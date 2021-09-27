@@ -3,16 +3,33 @@
     padding:0;
     box-sizing:border-box;
 } */
+#box{
+  background-color:black; 
+  width: 1300px;
+  height:600px;
+
+
+}
+#box1{
+  background-color:black; 
  .carousel-inner{
   background-color:#24272E; 
   width: 1300px;
-  height:700px; 
+  height:600px;
+
 }
+ 
 .text1{
   color:blue;
   font-size: 50px;
   text-align: center;
 }
+    #box2{
+  background-color:black; 
+  width: 1300px;
+  height:600px;
+}
+
 .text{
   color: purple;
   font-size: 50px;
