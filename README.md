@@ -9,7 +9,7 @@ HTML <br/>
 CSS <br>
 javascript
 # 3.Live Demo
-rock-paper-scissor-game-by-shital-dugar.netlify.app
+https://rock-paper-scissor-game-by-shital-dugar.netlify.app
 # 4.Image of website
 ![gamepic](https://user-images.githubusercontent.com/88958994/134391331-0597618c-5c29-46ae-bbb7-b2e18c6014d3.JPG)
 
