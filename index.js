@@ -38,12 +38,12 @@ function win(userChoice ,computerChoice){
 function lose(userChoice,computerChoice){
     console.log("you lose");
    computerScore++;
-   userScore_span.innerHtml = userScore;//for updating score
-   computerScore_span.innerHTML = computerScore;//for updating score
+   userScore_span.innerHtml = userScore;
+   computerScore_span.innerHTML = computerScore;
    const smallUserWord="user".fontsize(2).sub();
    const smallCompWord="comp".fontsize(2).sub();
    result_p.innerHTML=`${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. You lost...! `;
-   document.getElementById(userChoice).classList.add('red-glow');//user click any of button and if they lose
+   document.getElementById(userChoice).classList.add('red-glow');
    setTimeout(function(){document.getElementById(userChoice).classList.remove('red-glow')},300);
    }  
 
@@ -51,19 +51,17 @@ function lose(userChoice,computerChoice){
 function draw(userChoice,computerChoice){
   // userScore_span.innerHtml=userScore;
    //computerScore_span.innerHTML=computerScore;
-   const smallUserWord="user".fontsize(2).sub();//for text
+   const smallUserWord="user".fontsize(2).sub();
    const smallCompWord="comp".fontsize(2).sub();
    result_p.innerHTML=`${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. it's a draw .`;//for text
-   //wraping with $ and{ bcoz i dont want it to show as a text
    document.getElementById(userChoice).classList.add('gray-glow');
-   setTimeout(function(){document.getElementById(userChoice).classList.remove('gray-glow')},300);//will come and go in .3 s
+   setTimeout(function(){document.getElementById(userChoice).classList.remove('gray-glow')},300);
    }  
 
 
 
 function game(userChoice){
-    //console.log("💩 U+1F4A9 💩 U+1F4A9 💩 U+1F4A9+userChoice")
-    const computerChoice=getComputerChoice();//calling getComputerChoice function
+    const computerChoice=getComputerChoice();
     //console.log(computerChoice);
     //console.log("userChoice=>"+userChoice);
     //console.log("computerChoice=>"+computerChoice);
@@ -72,7 +70,7 @@ function game(userChoice){
         case "pr":
         case "sp":
        // console.log("USER WINS.");
-         win(userChoice,computerChoice);//calling win function and passing argument wtever userchoice or computerChoice is
+         win(userChoice,computerChoice);
          break;
         case "rp":
         case "ps":
@@ -92,7 +90,7 @@ function game(userChoice){
 }
 function main(){
 rock_div.addEventListener('click',function(){
-    game("r");//calling game function
+    game("r");
 })
 paper_div.addEventListener('click',function(){
     game("p");
@@ -103,31 +101,3 @@ scissor_div.addEventListener('click',function(){
 }
 main();
 
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("Slides");
-//   var dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//       dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
-// }
